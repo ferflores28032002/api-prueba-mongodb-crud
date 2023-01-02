@@ -7,6 +7,6 @@ route.get("/clientes", loadClientes);
 route.get("/clientes/:id", clienteForId);
 route.post("/clientes", addClientes);
 route.put("/clientes/:id", editClientes);
-route.delete("/clientes/deletes", deleteClient);
+route.post("/clientes/deletes", deleteClient);
 
 export default route;
