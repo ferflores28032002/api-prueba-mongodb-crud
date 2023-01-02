@@ -42,8 +42,6 @@ export const deleteClient = async (req, res) => {
   try {
     for (let i = 0; i <= ids.length; i++) {
       const usuarios = await clientesModel.deleteOne({ _id: ids[i] });
-
-      console.log(usuarios)
     }
 
     res.json({
